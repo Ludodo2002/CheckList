@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
-
-    <div id="header">
-        <img src="https://42.fr/wp-content/uploads/2021/05/42-Final-sigle-seul.svg">
-        <h2>CheckList evaluation</h2>
-        <div id="searchbar">
-            <input type="text" id="myInput" placeholder="Title...">
-            <span onclick="newElement()" class="addBtn">Add task</span>
+    <head>
+        <link rel="stylesheet" type="text/css" href="./assets/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+        <script src="./assets/jquery.js"></script>
+        <script src="./assets/index.js"></script>
+    </head>
+    <body onload="setup()">
+        <div id="header">
+            <img src="https://42.fr/wp-content/uploads/2021/05/42-Final-sigle-seul.svg">
+            <h2>CheckList evaluation</h2>
+            <form id="addForm" class="searchbar">
+                <input type="text" id="newTodoInput" placeholder="Title" autocomplete="off" autofocus>
+                <span onclick="newElement()" class="addBtn">Add task</span>
+            </form>
         </div>
-    </div>
-
-      <ul id="myUL">
-        <li>Nom de la fonction ?</li>
-        <li>Bonne variable ?</li>
-        <li>Bon fichier</li>
-        <li>Tout est dans git ?</li>
-        <li>Git push et git commit fait ?</li>
-      </ul>
-      <script src="index.js"></script>
-
+        <div id="container">
+            <ul id="list">
+            </ul>
+        </div>
+    </body>
+    
 </html>
