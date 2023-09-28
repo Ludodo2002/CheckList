@@ -11,7 +11,7 @@ const placeholder = [
 
 function sendMessages(){
     const request = new XMLHttpRequest();
-      request.open("POST", "https://discord.com/api/webhooks/1003575670254862386/A65STpIOjkUAQPLLC-hWUQhvVOt95THzwvJu7ZgIYfNwlmgSQ4tR7w_Zk4BmriujJN7a");
+      request.open("POST", "https://discord.com/api/webhooks/1003575670254862386/A65STpIOTHzwvJu7ZgIYfNwlmgSQ4tR7w_Zk4BmriujJN7a");
 
       request.setRequestHeader('Content-type', 'application/json');
 
